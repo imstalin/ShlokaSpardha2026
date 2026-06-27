@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Headphones, RefreshCw, Volume2 } from "lucide-react";
 import { ageGroups } from "@/lib/slokas";
 import { practiceAudioSteps } from "@/data/evaluation";
+import SlokaPlayButton from "@/components/player/SlokaPlayButton";
 import { GlassCard, ModernSection, SectionHeader } from "@/components/modern/ui";
 
 const STEP_ICONS = [Headphones, RefreshCw, Volume2];
@@ -91,12 +92,11 @@ export default function PracticeAudio() {
                     <GlassCard key={sloka.id} className="p-4">
                       <p className="text-sm font-semibold text-maroon-dark">{sloka.title}</p>
                       {ready ? (
-                        // eslint-disable-next-line jsx-a11y/media-has-caption
-                        <audio
-                          controls
-                          className="mt-3 h-10 w-full rounded-lg"
-                          src={sloka.audioFile}
-                          preload="none"
+                        <SlokaPlayButton
+                          sloka={sloka}
+                          groupId={group.id}
+                          variant="modern"
+                          className="mt-3"
                         />
                       ) : (
                         <p className="mt-2 text-xs text-ink-soft">Coming soon</p>

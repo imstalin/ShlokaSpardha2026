@@ -20,8 +20,7 @@ export const rules: Rule[] = [
     title: "Choose from the listed slokas",
     description:
       `Each age group has a set of suggested slokas (see the Slokas section).
-       For 3 to 5 years, children may recite any 2 slokas from their group's list. 
-       For older kids, children may recite any 1 sloka from their group's list.`,
+        For 3 to 5 years any 2 slokas and for older kids any 1 from the age-wise list shared.`,
     category: "important",
   },
   {

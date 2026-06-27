@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import type { Sloka } from "@/data/slokas";
 import { copyToClipboard } from "@/lib/share";
 import { isPracticeCompleted, togglePracticeCompleted } from "@/lib/practice";
+import SlokaPlayButton from "@/components/player/SlokaPlayButton";
 
 interface SlokaCardProps {
   sloka: Sloka;
@@ -103,10 +104,11 @@ export default function SlokaCard({ sloka, index }: SlokaCardProps) {
           🎧 Audio
         </p>
         {hasAudio ? (
-          // eslint-disable-next-line jsx-a11y/media-has-caption
-          <audio controls className="h-[38px] w-full" src={sloka.audioFile} preload="none">
-            Your browser does not support audio playback.
-          </audio>
+          <SlokaPlayButton
+            sloka={sloka}
+            groupId={sloka.id.split("-")[0]}
+            variant="classic"
+          />
         ) : (
           <p className="text-xs text-ink-soft">Coming soon — set in data/audio.ts</p>
         )}

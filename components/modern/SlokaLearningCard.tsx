@@ -12,6 +12,7 @@ import {
   toggleFavorite,
   togglePracticeCompleted,
 } from "@/lib/practice";
+import SlokaPlayButton from "@/components/player/SlokaPlayButton";
 import { useReducedMotion } from "@/lib/motion";
 
 interface SlokaLearningCardProps {
@@ -131,8 +132,11 @@ export default function SlokaLearningCard({ sloka, index, onUpdate }: SlokaLearn
                   Practice audio
                 </p>
                 {sloka.audioFile ? (
-                  // eslint-disable-next-line jsx-a11y/media-has-caption
-                  <audio controls className="h-9 w-full" src={sloka.audioFile} preload="none" />
+                  <SlokaPlayButton
+                    sloka={sloka}
+                    groupId={sloka.id.split("-")[0]}
+                    variant="modern"
+                  />
                 ) : (
                   <p className="text-xs text-ink-soft">
                     Coming soon — set in <code className="rounded bg-cream px-1">data/audio.ts</code>

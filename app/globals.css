@@ -50,6 +50,44 @@
     --glass-bg: rgba(255, 255, 255, 0.35);
     --glass-border: rgba(255, 255, 255, 0.4);
   }
+
+  .player-glass {
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.92) 0%, rgba(18, 18, 18, 0.96) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .player-range {
+    height: 4px;
+    border-radius: 9999px;
+  }
+
+  .player-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  .group:hover .player-range::-webkit-slider-thumb,
+  .player-range:focus::-webkit-slider-thumb,
+  .player-range:active::-webkit-slider-thumb {
+    opacity: 1;
+  }
+
+  .player-range::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

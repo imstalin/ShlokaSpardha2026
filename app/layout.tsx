@@ -23,6 +23,7 @@ const tiroSanskrit = Tiro_Devanagari_Sanskrit({
 });
 
 import { EVENT } from "@/data/event";
+import AudioPlayerRoot from "@/components/player/AudioPlayerRoot";
 
 export const metadata: Metadata = {
   title: "Sloka Spardha 2026 — Bhakthi Sudha Mandali",
@@ -67,7 +68,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${notoSerifDevanagari.variable} ${tiroSanskrit.variable} scroll-smooth`}
     >
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <AudioPlayerRoot>{children}</AudioPlayerRoot>
+      </body>
     </html>
   );
 }

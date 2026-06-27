@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { SectionHead, SectionWrapper } from "@/components/ui";
+import SlokaPlayButton from "@/components/player/SlokaPlayButton";
 import { ageGroups } from "@/lib/slokas";
 
 const STEPS = [
@@ -122,10 +123,11 @@ export default function PracticeAudio() {
                     >
                       <p className="mb-2 text-sm font-bold text-maroon-dark">{sloka.title}</p>
                       {audioReady ? (
-                        // eslint-disable-next-line jsx-a11y/media-has-caption
-                        <audio controls className="h-[38px] w-full" src={sloka.audioFile} preload="none">
-                          Your browser does not support audio playback.
-                        </audio>
+                        <SlokaPlayButton
+                          sloka={sloka}
+                          groupId={group.id}
+                          variant="classic"
+                        />
                       ) : (
                         <p className="text-xs text-ink-soft">Coming soon</p>
                       )}
