@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #fff8ec;
+  --color-card: #fcefd8;
+  --color-maroon: #7a1f2b;
+  --color-maroon-dark: #5a1620;
+  --color-gold: #c8862b;
+  --color-gold-light: #e3a94f;
+  --color-tulsi: #1f4d3d;
+  --color-ink: #3a1410;
+  --color-ink-soft: #6b453e;
+  --color-line: rgba(122, 31, 43, 0.18);
+  --color-deep-green: #1a3d32;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-devanagari: var(--font-noto-devanagari), serif;
+  --font-sanskrit: var(--font-tiro-sanskrit), var(--font-noto-devanagari), serif;
+}
+
+@layer base {
+  ::selection {
+    background-color: var(--color-gold-light);
+    color: var(--color-maroon-dark);
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    background-image:
+      radial-gradient(circle at 10% 8%, rgba(200, 134, 43, 0.07) 0%, transparent 40%),
+      radial-gradient(circle at 90% 92%, rgba(122, 31, 43, 0.06) 0%, transparent 40%);
+  }
+}
+
+@layer utilities {
+  .font-devanagari {
+    font-family: var(--font-devanagari);
+  }
+
+  .font-sanskrit {
+    font-family: var(--font-sanskrit);
+  }
+
+  .section-scroll-margin {
+    scroll-margin-top: 5.25rem;
+  }
+
+  .modern-theme {
+    --glass-bg: rgba(255, 255, 255, 0.35);
+    --glass-border: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

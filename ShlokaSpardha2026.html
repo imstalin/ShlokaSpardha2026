@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sloka Spardha 2026 — Bhakthi Sudha Mandali</title>
+<meta name="description" content="Guru Purnima Sloka Competition by Bhakthi Sudha Mandali — July 25th, 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=Noto+Serif+Devanagari:wght@500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream: #FFF8EC;
+    --card: #FCEFD8;
+    --maroon: #7A1F2B;
+    --maroon-dark: #5A1620;
+    --gold: #C8862B;
+    --gold-light: #E3A94F;
+    --tulsi: #1F4D3D;
+    --ink: #3A1410;
+    --ink-soft: #6B453E;
+    --line: rgba(122,31,43,0.18);
+    --shadow: 0 8px 24px rgba(58,20,16,0.08);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(circle at 10% 8%, rgba(200,134,43,0.07) 0%, transparent 40%),
+      radial-gradient(circle at 90% 92%, rgba(122,31,43,0.06) 0%, transparent 40%);
+  }
+  .sanskrit{ font-family: 'Tiro Devanagari Sanskrit', 'Noto Serif Devanagari', serif; }
+  a{ color: inherit; text-decoration: none; }
+  img{ max-width:100%; display:block; }
+  ::selection{ background: var(--gold-light); color: var(--maroon-dark); }
+
+  /* ---------- NAV ---------- */
+  .nav{
+    position: sticky; top:0; z-index: 100;
+    background: rgba(255,248,236,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner{
+    max-width: 980px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 12px 20px;
+  }
+  .brand{ display:flex; align-items:center; gap:10px; font-weight:700; color:var(--maroon); font-size:15px; }
+  .brand-mark{ width:30px; height:30px; flex-shrink:0; }
+  .nav-links{ display:flex; gap: 4px; flex-wrap:wrap; }
+  .nav-links a{
+    font-size: 13px; font-weight:600; color: var(--ink-soft);
+    padding: 8px 11px; border-radius: 8px; white-space:nowrap;
+    transition: background .15s, color .15s;
+  }
+  .nav-links a:hover{ background: var(--card); color: var(--maroon); }
+  .nav-toggle{ display:none; }
+
+  @media (max-width: 760px){
+    .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; background:var(--cream); flex-direction:column; padding:8px 12px 16px; border-bottom:1px solid var(--line); box-shadow: var(--shadow); }
+    .nav-links.open{ display:flex; }
+    .nav-links a{ padding:11px 12px; border-bottom: 1px solid var(--line); border-radius:0; }
+    .nav-toggle{ display:flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:8px; border:1px solid var(--line); background:var(--card); cursor:pointer; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    max-width: 980px; margin: 0 auto;
+    padding: 56px 20px 40px;
+    text-align:center;
+    position: relative;
+  }
+  .moon-row{ display:flex; justify-content:center; gap:10px; margin-bottom: 22px; opacity:0.9; }
+  .eyebrow{
+    display:inline-block; font-size:12.5px; letter-spacing:0.08em; font-weight:700;
+    color: var(--maroon); background: var(--card); border:1px solid var(--line);
+    padding: 6px 14px; border-radius: 999px; margin-bottom: 18px;
+  }
+  .hero h1{
+    font-family:'Noto Serif Devanagari', serif; font-weight:700;
+    font-size: clamp(30px, 6vw, 52px);
+    color: var(--maroon);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .hero .sub-sanskrit{
+    font-size: clamp(20px, 3.5vw, 28px); color: var(--gold); margin-bottom: 18px;
+  }
+  .hero p.lede{
+    max-width: 620px; margin: 0 auto 30px;
+    font-size: 16.5px; color: var(--ink-soft);
+  }
+  .hero-org{ font-weight:700; color:var(--maroon); }
+
+  .hero-facts{
+    display:flex; flex-wrap:wrap; justify-content:center; gap: 12px;
+    margin-bottom: 30px;
+  }
+  .fact-pill{
+    display:flex; align-items:center; gap:8px;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 12px 18px;
+    font-size: 14px; font-weight:600; color: var(--maroon-dark);
+    box-shadow: var(--shadow);
+  }
+  .fact-pill .ico{ font-size:17px; }
+
+  .hero-cta{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding: 13px 26px; border-radius: 999px;
+    font-weight:700; font-size: 14.5px;
+    cursor:pointer; border: 2px solid transparent;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:active{ transform: scale(0.97); }
+  .btn-primary{ background: var(--maroon); color: var(--cream); box-shadow: 0 6px 18px rgba(122,31,43,0.25); }
+  .btn-primary:hover{ background: var(--maroon-dark); }
+  .btn-secondary{ background: transparent; border-color: var(--maroon); color: var(--maroon); }
+  .btn-secondary:hover{ background: var(--card); }
+
+  /* ---------- DIVIDER (signature moon-phase motif) ---------- */
+  .div-wrap{ max-width:980px; margin: 0 auto; padding: 0 20px; }
+  .moon-divider{ display:flex; align-items:center; gap:14px; margin: 8px 0 44px; }
+  .moon-divider .line{ flex:1; height:1px; background: var(--line); }
+  .moon-divider .phases{ display:flex; gap:7px; }
+  .moon-phase{ width:14px; height:14px; border-radius:50%; background: var(--gold-light); }
+
+  /* ---------- SECTION shell ---------- */
+  section{ max-width: 980px; margin: 0 auto; padding: 10px 20px 64px; scroll-margin-top: 84px; }
+  .section-head{ margin-bottom: 28px; }
+  .section-kicker{ font-size:12.5px; font-weight:700; letter-spacing:0.08em; color:var(--gold); text-transform:uppercase; margin-bottom: 8px; }
+  .section-head h2{ font-family:'Noto Serif Devanagari', serif; font-size: clamp(24px,4vw,32px); color: var(--maroon); font-weight:700; }
+  .section-head p{ color: var(--ink-soft); margin-top:8px; max-width: 640px; font-size:15px; }
+
+  .card{
+    background: var(--card); border:1px solid var(--line); border-radius: 18px;
+    padding: 26px 24px; box-shadow: var(--shadow);
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{ display:grid; grid-template-columns: 1.3fr 1fr; gap: 22px; }
+  @media(max-width:700px){ .about-grid{ grid-template-columns:1fr; } }
+  .about-grid .card p{ margin-bottom: 12px; color: var(--ink-soft); font-size:15px; }
+  .about-grid .card p:last-child{ margin-bottom:0; }
+  .detail-list{ list-style:none; }
+  .detail-list li{ display:flex; gap:12px; padding: 13px 0; border-bottom:1px solid var(--line); }
+  .detail-list li:last-child{ border-bottom:none; }
+  .detail-list .ico{ font-size:19px; flex-shrink:0; width:24px; text-align:center; }
+  .detail-list .label{ font-size:12px; color:var(--ink-soft); font-weight:600; text-transform:uppercase; letter-spacing:0.04em; }
+  .detail-list .val{ font-weight:700; color: var(--maroon-dark); font-size:14.5px; }
+
+  /* ---------- RULES ---------- */
+  .rules-list{ display:grid; gap:14px; }
+  .rule-item{
+    display:flex; gap:16px; background: var(--card); border:1px solid var(--line);
+    border-radius:14px; padding:18px 20px; align-items:flex-start;
+  }
+  .rule-num{
+    flex-shrink:0; width:34px; height:34px; border-radius:50%;
+    background: var(--maroon); color:var(--cream); font-weight:700; font-size:14px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .rule-item p{ font-size:14.5px; color: var(--ink-soft); }
+  .rule-item strong{ color: var(--ink); }
+
+  /* ---------- FORM CTA ---------- */
+  .form-card{
+    background: linear-gradient(180deg, var(--card), var(--cream));
+    border: 2px dashed var(--gold);
+    border-radius: 20px;
+    padding: 36px 28px;
+    text-align:center;
+  }
+  .form-card .deadline{
+    display:inline-flex; align-items:center; gap:8px;
+    background: var(--maroon); color:var(--cream);
+    font-weight:700; font-size:13.5px;
+    padding: 9px 18px; border-radius: 999px; margin-bottom:18px;
+  }
+  .form-card h3{ font-family:'Noto Serif Devanagari',serif; color:var(--maroon); font-size:22px; margin-bottom:10px; }
+  .form-card p{ color:var(--ink-soft); font-size:15px; max-width:480px; margin: 0 auto 24px; }
+  .form-steps{ display:flex; justify-content:center; gap:24px; flex-wrap:wrap; margin-top:28px; }
+  .form-step{ font-size:13px; color: var(--ink-soft); max-width:140px; }
+  .form-step .n{ width:26px; height:26px; border-radius:50%; border:1.5px solid var(--gold); color:var(--maroon); font-weight:700; font-size:12px; display:flex; align-items:center; justify-content:center; margin: 0 auto 8px; }
+
+  /* ---------- AGE GROUPS (Sloka submenus) ---------- */
+  .age-tabs{ display:flex; gap:8px; margin-bottom: 24px; flex-wrap:wrap; position:relative; z-index:1; }
+  .age-tab{
+    padding: 10px 18px; border-radius: 999px; border: 1.5px solid var(--line);
+    font-weight:700; font-size:13.5px; color: var(--ink-soft); cursor:pointer; background:var(--cream);
+    transition: all .15s;
+    -webkit-tap-highlight-color: rgba(122,31,43,0.15);
+    touch-action: manipulation;
+    -webkit-user-select: none; user-select: none;
+    position: relative; z-index: 2;
+    appearance: none; -webkit-appearance: none;
+  }
+  .age-tab.active{ background: var(--maroon); border-color: var(--maroon); color: var(--cream); }
+  .age-panel{ display:none; }
+  .age-panel.active{ display:block; }
+  .age-panel-head{ display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+  .age-phase{ width:38px; height:38px; border-radius:50%; flex-shrink:0; }
+  .age-panel-head h3{ font-family:'Noto Serif Devanagari',serif; color:var(--maroon); font-size:20px; }
+  .age-panel-head span{ display:block; font-size:13px; color: var(--ink-soft); font-weight:500; }
+
+  /* On mobile, skip the tap-to-switch tabs entirely: show every age group stacked, one after another */
+  @media (max-width: 700px){
+    .age-tabs{ display:none; }
+    .age-panel{ display:block !important; margin-bottom: 40px; padding-bottom: 28px; border-bottom: 1px dashed var(--line); }
+    .age-panel:last-of-type{ border-bottom:none; margin-bottom:0; padding-bottom:0; }
+  }
+
+  .sloka-card{ background: var(--card); border:1px solid var(--line); border-radius:16px; padding:22px 22px; margin-bottom:14px; }
+  .sloka-card .sloka-title{ font-weight:700; color:var(--maroon-dark); font-size:14px; margin-bottom:12px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .sloka-card .sloka-title .badge{ background:var(--gold-light); color:var(--maroon-dark); font-size:11px; padding:3px 9px; border-radius:999px; font-weight:700; }
+  .sloka-text{
+    font-family:'Tiro Devanagari Sanskrit','Noto Serif Devanagari',serif;
+    font-size: 19px; color: var(--ink); line-height:1.9; margin-bottom:10px; white-space:pre-line;
+  }
+  .sloka-translit{ font-size:13.5px; color: var(--ink-soft); font-style:italic; white-space:pre-line; line-height:1.7; }
+  .note-box{
+    margin-top:18px; background: rgba(31,77,61,0.08); border:1px solid rgba(31,77,61,0.25);
+    border-radius:12px; padding:14px 16px; font-size:13.5px; color: var(--tulsi); display:flex; gap:10px;
+  }
+
+  /* ---------- AUDIO PLAYER (sloka cards) ---------- */
+  .sloka-audio{
+    margin-top: 14px;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px 14px;
+  }
+  .sloka-audio .audio-label{
+    display:flex; align-items:center; gap:7px;
+    font-size: 12.5px; font-weight:700; color: var(--maroon-dark);
+    margin-bottom: 8px;
+  }
+  .sloka-audio audio{ width: 100%; height: 38px; }
+  .sloka-audio audio::-webkit-media-controls-panel{ background-color: var(--card); }
+
+  /* ---------- EVALUATION ---------- */
+  .eval-grid{ display:grid; grid-template-columns: repeat(2,1fr); gap:14px; }
+  @media(max-width:700px){ .eval-grid{ grid-template-columns:1fr; } }
+  .eval-card{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; }
+  .eval-card .eval-top{ display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+  .eval-card h4{ color:var(--maroon-dark); font-size:15px; font-weight:700; }
+  .eval-weight{ font-size:12px; font-weight:700; color:var(--gold); background:rgba(200,134,43,0.13); padding:3px 10px; border-radius:999px; }
+  .eval-card p{ font-size:13.5px; color:var(--ink-soft); }
+
+  /* ---------- PRACTICE AUDIO ---------- */
+  .audio-steps{ display:grid; gap:14px; }
+  .audio-step{ display:flex; gap:16px; align-items:flex-start; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; }
+  .audio-step .ico{ font-size:22px; flex-shrink:0; }
+  .audio-step p{ font-size:14px; color:var(--ink-soft); }
+  .audio-step strong{ color:var(--ink); }
+  .audio-warn{ display:flex; gap:10px; align-items:flex-start; background:rgba(122,31,43,0.07); border:1px solid rgba(122,31,43,0.2); border-radius:14px; padding:16px 18px; margin-top:18px; font-size:13.5px; color:var(--maroon-dark); }
+
+  .practice-group{ margin-top: 26px; }
+  .practice-group-title{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Noto Serif Devanagari',serif; color: var(--maroon);
+    font-size: 17px; font-weight:700; margin-bottom: 14px;
+  }
+  .practice-group-title .age-phase{ width:26px; height:26px; }
+  .practice-group-title .status-pill{
+    font-family:'Inter',sans-serif; font-size:11px; font-weight:700;
+    background: rgba(31,77,61,0.1); color: var(--tulsi);
+    padding:3px 10px; border-radius:999px; margin-left:auto;
+  }
+  .status-pill.pending{ background: rgba(122,31,43,0.08); color: var(--maroon-dark); }
+
+  /* ---------- PRIZES ---------- */
+  .prize-grid{ display:grid; grid-template-columns: repeat(2,1fr); gap:16px; }
+  @media(max-width:700px){ .prize-grid{ grid-template-columns:1fr; } }
+  .prize-card{ background:var(--card); border:1px solid var(--line); border-radius:18px; padding:26px 22px; text-align:center; }
+  .prize-card.special{ border:2px solid var(--gold); background: linear-gradient(180deg, #FBE9C8, var(--card)); }
+  .prize-icon{ font-size:34px; margin-bottom:12px; }
+  .prize-card h4{ color:var(--maroon-dark); font-size:17px; margin-bottom:8px; font-family:'Noto Serif Devanagari',serif; }
+  .prize-card p{ font-size:13.5px; color: var(--ink-soft); }
+
+  /* ---------- FOOTER ---------- */
+  footer{ border-top:1px solid var(--line); margin-top:30px; padding: 36px 20px 30px; text-align:center; }
+  footer .org{ font-family:'Noto Serif Devanagari',serif; color:var(--maroon); font-weight:700; font-size:17px; margin-bottom:6px; }
+  footer .contact{ font-size:14px; color: var(--ink-soft); margin-bottom:14px; }
+  footer .contact strong{ color:var(--ink); }
+  footer .tagline{ font-size:12.5px; color: var(--ink-soft); opacity:0.8; }
+
+  @media (max-width: 480px){
+    .hero{ padding-top:40px; }
+    section{ padding-bottom:48px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="#C8862B" stroke-width="1.5"/>
+        <path d="M20 8 L23 17 L32 17 L24.5 22.5 L27.5 31.5 L20 26 L12.5 31.5 L15.5 22.5 L8 17 L17 17 Z" fill="#7A1F2B"/>
+      </svg>
+      <span>Bhakthi Sudha Mandali</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#rules">Rules</a>
+      <a href="#register">Register</a>
+      <a href="#slokas">Slokas</a>
+      <a href="#evaluation">Evaluation</a>
+      <a href="#practice-audio">Practice audio</a>
+      <a href="#prizes">Prizes</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="moon-row" aria-hidden="true">
+    <svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 8 8 0 010-20z" fill="#E3A94F" opacity="0.5"/></svg>
+    <svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 8 8 0 010-20z" fill="#E3A94F" opacity="0.75"/></svg>
+    <svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#C8862B"/></svg>
+  </div>
+  <div class="eyebrow">गुरु पूर्णिमा · Guru Purnima Celebration 2026</div>
+  <h1>Sloka Spardha</h1>
+  <div class="sub-sanskrit sanskrit">श्लोक स्पर्धा</div>
+  <p class="lede">
+    <span class="hero-org">Bhakthi Sudha Mandali</span> invites children to offer their voice in devotion —
+    a sloka recitation competition held in reverence of our Gurus, this Guru Purnima.
+  </p>
+
+  <div class="hero-facts">
+    <div class="fact-pill"><span class="ico">📅</span> July 25th, 2026</div>
+    <div class="fact-pill"><span class="ico">🕠</span> 5:15 – 7:00 PM IST</div>
+    <div class="fact-pill"><span class="ico">👧🧒</span> Ages 3 to 14</div>
+  </div>
+
+  <div class="hero-cta">
+    <a href="#register" class="btn btn-secondary">Register now ↗</a>
+    <a href="#slokas" class="btn btn-secondary">View slokas by age group</a>
+  </div>
+</header>
+
+<div class="div-wrap">
+  <div class="moon-divider" aria-hidden="true">
+    <div class="line"></div>
+    <div class="phases">
+      <div class="moon-phase" style="opacity:0.35"></div>
+      <div class="moon-phase" style="opacity:0.6"></div>
+      <div class="moon-phase" style="opacity:1"></div>
+    </div>
+    <div class="line"></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-head">
+    <div class="section-kicker">About the event</div>
+    <h2>Why we gather this Guru Purnima</h2>
+    <p>Bhakthi Sudha Mandali is organising this sloka competition as a heartfelt offering to our Gurus — a chance for our children to learn, recite, and carry forward the wisdom of sacred verses.</p>
+  </div>
+  <div class="about-grid">
+    <div class="card">
+      <p>Guru Purnima marks the day we honour our teachers — those who light the path of knowledge and devotion. In that spirit, Bhakthi Sudha Mandali brings together children from our community to learn and recite slokas, building a lifelong connection with our spiritual heritage.</p>
+      <p>Every child who steps forward to participate is, in their own way, honouring this tradition — and every child who takes part will be celebrated for their effort, not only for their result.</p>
+      <p>We warmly welcome all children in our community, regardless of prior experience with sloka recitation, to take part in this joyful celebration.</p>
+    </div>
+    <div class="card">
+      <ul class="detail-list">
+        <li>
+          <span class="ico">🪔</span>
+          <div><div class="label">Organised by</div><div class="val">Bhakthi Sudha Mandali</div></div>
+        </li>
+        <li>
+          <span class="ico">🌕</span>
+          <div><div class="label">Occasion</div><div class="val">Guru Purnima 2026</div></div>
+        </li>
+        <li>
+          <span class="ico">📅</span>
+          <div><div class="label">Competition date</div><div class="val">Saturday, July 25th, 2026</div></div>
+        </li>
+        <li>
+          <span class="ico">🕠</span>
+          <div><div class="label">Time</div><div class="val">5:15 PM – 7:00 PM IST</div></div>
+        </li>
+        <li>
+          <span class="ico">💻</span>
+          <div><div class="label">Platform</div><div class="val">Google Meet</div></div>
+        </li>
+        <li>
+          <span class="ico">📶</span>
+          <div><div class="label">Internet connection</div><div class="val">Please use WiFi, not mobile data, for a stable connection</div></div>
+        </li>
+        <li>
+          <span class="ico">🎚️</span>
+          <div><div class="label">Audio &amp; video check</div><div class="val">5:15 PM – 5:30 PM IST</div></div>
+        </li>
+        <li>
+          <span class="ico">📝</span>
+          <div><div class="label">Registration closes</div><div class="val">July 10th, 2026</div></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section id="rules">
+  <div class="section-head">
+    <div class="section-kicker">Guidelines</div>
+    <h2>Competition rules</h2>
+    <p>A few simple guidelines to keep things fair, fun, and meaningful for every child.</p>
+  </div>
+  <div class="rules-list">
+    <div class="rule-item">
+      <div class="rule-num">1</div>
+      <p><strong>Age groups.</strong> Children compete within their own age category — 3 to 5 years, 6 to 10 years, or 11 to 14 years. Age is considered as on July 25th, 2026.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">2</div>
+      <p><strong>Choose from the listed slokas.</strong> Each age group has a set of suggested slokas (see the Slokas section). For 3 to 5 years, children may recite any 2 slokas from their group's list. For 6 to 10 years and 11 to 14 years, children may recite any 1 sloka from their group's list.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">3</div>
+      <p><strong>Registration is mandatory.</strong> Every participant must be registered through the Google Form before the deadline — July 10th, 2026.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">4</div>
+      <p><strong>Recitation should be clear and unaided.</strong> Children should recite from memory, without reading from a book or screen during the performance, with correct pronunciation as far as possible.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">5</div>
+      <p><strong>Parent presence during recitation.</strong> For the 3 to 5 years age group, a parent may sit beside the child and should be visible in the video. For the 6 to 10 and 11 to 14 years age groups, children should recite without a parent seated beside them. If there is any exception where a parent's presence is needed, please inform the team in advance of the competition so this can be discussed and agreed upon.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">6</div>
+      <p><strong>One attempt per child.</strong> Each participant gets a single recitation turn on the day of the competition.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">7</div>
+      <p><strong>Punctuality matters.</strong> Participants are requested to be present and ready between 5:15 PM and 7:00 PM IST on July 25th, in the order communicated to families.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">8</div>
+      <p><strong>No travel during the competition.</strong> Participants should not be travelling while the competition is in progress. All students should disperse only after the competition ends, and not as soon as their own turn is over.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">9</div>
+      <p><strong>A respectful, joyful spirit.</strong> This is a celebration of devotion and learning — families and children are encouraged to cheer warmly for every participant.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">10</div>
+      <p><strong>Decision of judges is final.</strong> Evaluation will be done as per the parameters listed in the Evaluation section, and the judges' decision on awards will be final.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTRATION -->
+<section id="register">
+  <div class="section-head">
+    <div class="section-kicker">Registration</div>
+    <h2>Register your child</h2>
+  </div>
+  <div class="form-card">
+    <div class="deadline">⏳ Last date to register: July 10th, 2026</div>
+    <h3 class="sanskrit">पंजीकरण करें</h3>
+    <p>A Google Form will be shared in the WhatsApp group shortly. Please complete registration through that form by July 10th, 2026.</p>
+  </div>
+</section>
+
+<!-- SLOKAS (age-wise submenus) -->
+<section id="slokas">
+  <div class="section-head">
+    <div class="section-kicker">Age-wise sloka list</div>
+    <h2>Slokas for each age group</h2>
+    <p>Please find the sloka list by age group below. For 3 to 5 years, children may recite any 2 slokas from the list. For 6 to 10 years and 11 to 14 years, children may recite any 1 sloka from the list.</p>
+  </div>
+
+  <div class="age-tabs" role="tablist">
+    <button type="button" class="age-tab active" data-tab="g1">🌱 3–5 years</button>
+    <button type="button" class="age-tab" data-tab="g2">🌿 6–10 years</button>
+    <button type="button" class="age-tab" data-tab="g3">🌳 11–14 years</button>
+  </div>
+
+  <!-- Group 1 -->
+  <div class="age-panel active" id="g1">
+    <div class="age-panel-head">
+      <div class="age-phase" style="background:#E3A94F"></div>
+      <div><h3>3 to 5 years</h3><span>Short, simple slokas — focus on joyful recitation, not length</span></div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Guru Brahma <span class="badge">Guru sloka (short)</span></div>
+      <div class="sloka-text sanskrit">गुरुर्ब्रह्मा गुरुर्विष्णुः गुरुर्देवो महेश्वरः ।
+गुरुः साक्षात् परब्रह्म तस्मै श्रीगुरवे नमः ॥</div>
+      <div class="sloka-translit">gururbrahmā gururviṣṇuḥ gururdevo maheśvaraḥ
+guruḥ sākṣāt parabrahma tasmai śrī-gurave namaḥ</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Dakshinamoorthy Sloka <span class="badge">Guru Purnima special</span></div>
+      <div class="sloka-text sanskrit">गुरवे सर्वलोकानां भिषजे भवरोगिणाम् ।
+निधये सर्वविद्यानां दक्षिणामूर्तये नमः ॥</div>
+      <div class="sloka-translit">gurave sarva-lokānāṁ bhiṣaje bhava-rogiṇām
+nidhaye sarva-vidyānāṁ dakṣiṇāmūrtaye namaḥ</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Gurureva Gati <span class="badge">Guru sloka</span></div>
+      <div class="sloka-text sanskrit">गुरुरेव गतिः गुरुमेव भजे गुरुणैव सहास्मि नमो गुरवे ।
+न गुरोः परमं शिशुरस्मि गुरोः मतिरस्ति गुरौ मम पाहि गुरो ॥</div>
+      <div class="sloka-translit">gurureva gatiḥ gurumeva bhaje guruṇaiva sahāsmi namo gurave
+na guroḥ paramaṁ śiśurasmi guroḥ matirasti gurau mama pāhi guro</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Akhanda Mandalakaram <span class="badge">Guru sloka</span></div>
+      <div class="sloka-text sanskrit">अखण्ड-मण्डलाकारम् व्याप्तम् येन चराचरम् ।
+तत्पदम् दर्शितम् येन तस्मै श्री गुरवे नमः ॥</div>
+      <div class="sloka-translit">akhaṇḍa-maṇḍalākāram vyāptam yena carācaram
+tat-padam darśitam yena tasmai śrī gurave namaḥ</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Agnyana Timiranthasya <span class="badge">Guru sloka</span></div>
+      <div class="sloka-text sanskrit">अज्ञानतिमिरान्धस्य ज्ञानाञ्जनशलाकया ।
+चक्षुरुन्मीलितं येन तस्मै श्रीगुरवे नमः ॥</div>
+      <div class="sloka-translit">ajñāna-timirāndhasya jñānāñjana-śalākayā
+cakṣur-unmīlitaṁ yena tasmai śrī-gurave namaḥ</div>
+    </div>
+
+    <div class="note-box">💡 For this age group, parents are allowed to sit alongside to support confidence, and should be visible in the video.</div>
+  </div>
+
+  <!-- Group 2 -->
+  <div class="age-panel" id="g2">
+    <div class="age-panel-head">
+      <div class="age-phase" style="background:#C8862B"></div>
+      <div><h3>6 to 10 years</h3><span>Slightly longer slokas — focus on pronunciation and rhythm</span></div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Sri Shankaracharya Varyam <span class="badge">Sri Shankaracharya Stavah</span></div>
+      <div class="sloka-text sanskrit">॥ श्रीशङ्कराचार्यस्तवः ॥
+श्रीशङ्कराचार्यवर्यं सर्वलोकैकवन्द्यं भजे देशिकेन्द्रम्
+धर्मप्रचारेऽतिदक्षं योगिगोविन्दपादाप्तसन्यासदीक्षम् ।
+दुर्वादिगर्वापनोदं पद्मपादादिशिष्यालिसंसेव्यपादम् ॥1॥ (श्रीशङ्कराचार्यवर्यं)
+
+शङ्काद्रिदम्भोलिलीलं किङ्कराशेषशिष्यालि सन्त्राणशीलम् ।
+बालार्कनीकाशचेलं बोधिताशेषवेदान्त गूढार्थजालम् ॥2॥ (श्रीशङ्कराचार्यवर्यं)
+
+रुद्राक्षमालाविभूषं चन्द्रमौलीश्वराराधनावाप्ततोषम् ।
+विद्राविताशेषदोषं भद्रपूगप्रदं भक्तलोकस्य नित्यम् ॥3॥ (श्रीशङ्कराचार्यवर्यं)
+
+पापाटवीचित्रभानुं ज्ञानदीपेन हार्दं तमो वारयन्तम् ।
+द्वैपायनप्रीतिभाजं सर्वतापापहामोघबोधप्रदं तम् ॥4॥ (श्रीशङ्कराचार्यवर्यं)
+
+राजाधिराजाभिपूज्यं रम्यशृङ्गाद्रिवासैकलोलं यतीड्यम् ।
+राकेन्दुसङ्काशवक्त्रं रत्नगर्भेभवक्त्राङ्घ्रिपूजानुरक्तम् ॥5॥ (श्रीशङ्कराचार्यवर्यं)
+
+श्रीभारतीतीर्थगीतं शङ्करार्यस्तवं यः पठेद्भक्तियुक्तः ।
+सोऽवाप्नुयात्सर्वमिष्टं शङ्कराचार्यवर्यप्रसादेन तूर्णम् ॥6॥ (श्रीशङ्कराचार्यवर्यं)</div>
+      <div class="sloka-translit">śrī śaṅkarācārya-varyaṁ sarva-lokaika-vandyaṁ bhaje deśikendram
+dharma-pracāre'ti-dakṣaṁ yogi-govinda-pādāpta-sanyāsa-dīkṣam
+durvādi-garvāpanodaṁ padmapādādi-śiṣyāli-saṁsevya-pādam ॥1॥ (śrī śaṅkarācārya-varyaṁ)
+
+śaṅkādri-dambholi-līlaṁ kiṅkarāśeṣa-śiṣyāli santrāṇa-śīlam
+bālārka-nīkāśa-celaṁ bodhitāśeṣa-vedānta gūḍhārtha-jālam ॥2॥ (śrī śaṅkarācārya-varyaṁ)
+
+rudrākṣa-mālā-vibhūṣaṁ candramaulīśvarārādhanāvāpta-toṣam
+vidrāvitāśeṣa-doṣaṁ bhadra-pūga-pradaṁ bhakta-lokasya nityam ॥3॥ (śrī śaṅkarācārya-varyaṁ)
+
+pāpāṭavī-citra-bhānuṁ jñāna-dīpena hārdaṁ tamo vārayantam
+dvaipāyana-prīti-bhājaṁ sarva-tāpāpahāmogha-bodha-pradaṁ tam ॥4॥ (śrī śaṅkarācārya-varyaṁ)
+
+rājādhirājābhipūjyaṁ ramya-śṛṅgādri-vāsaika-lolaṁ yatīḍyam
+rākendu-saṅkāśa-vaktraṁ ratna-garbhebha-vaktrāṅghri-pūjānuraktam ॥5॥ (śrī śaṅkarācārya-varyaṁ)
+
+śrī-bhāratī-tīrtha-gītaṁ śaṅkarārya-stavaṁ yaḥ paṭhed bhakti-yuktaḥ
+so'vāpnuyāt sarvam iṣṭaṁ śaṅkarācārya-varya-prasādena tūrṇam ॥6॥ (śrī śaṅkarācārya-varyaṁ)</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Guru Ashtakam <span class="badge">Guru sloka</span></div>
+      <div class="sloka-text sanskrit">शरीरं सुरुपं तथा वा कलत्रं
+यशश्चारू चित्रं धनं मेरुतुल्यम् ।
+मनश्चेन्न लग्नं गुरोरंघ्रिपद्मे
+ततः किं ततः किं ततः किं ततः किम् ॥1॥
+
+कलत्रं धनं पुत्रपौत्रादि सर्वं
+गृहं बान्धवाः सर्वमेतद्धि जातम् ।
+मनश्चेन्न लग्नं गुरोरंघ्रिपद्मे
+ततः किं ततः किं ततः किं ततः किम् ॥2॥
+
+षडंगादिवेदो मुखे शास्त्रविद्या
+कवित्वादि गद्यं सुपद्यं करोति ।
+मनश्चेन्न लग्नं गुरोरंघ्रिपद्मे
+ततः किं ततः किं ततः किं ततः किम् ॥3॥
+
+विदेशेषु मान्यः स्वदेशेषु धन्यः
+सदाचारवृत्तेषु मत्तो न चान्यः ।
+मनश्चेन्न लग्नं गुरोरंघ्रिपद्मे
+ततः किं ततः किं ततः किं ततः किम् ॥4॥
+
+क्षमामण्डले भूपभूपालवृन्दैः
+सदा सेवितं यस्य पादारविन्दम् ।
+मनश्चेन्न लग्नं गुरोरंघ्रिपद्मे
+ततः किं ततः किं ततः किं ततः किम् ॥5॥
+
+यशो मे गतं दिक्षु दानप्रतापात्
+जगद्वस्तु सर्वं करे सत्प्रसादात् ।
+मनश्चेन्न लग्नं गुरोरंघ्रिपद्मे
+ततः किं ततः किं ततः किं ततः किम् ॥6॥
+
+न भोगे न योगे न वा वाजिराजौ
+न कान्तासुखे नैव वित्तेषु चित्तम् ।
+मनश्चेन्न लग्नं गुरोरंघ्रिपद्मे
+ततः किं ततः किं ततः किं ततः किम् ॥7॥
+
+अरण्ये न वा स्वस्य गेहे न कार्ये
+न देहे मनो वर्तते मे त्वनर्घ्ये ।
+मनश्चेन्न लग्नं गुरोरंघ्रिपद्मे
+ततः किं ततः किं ततः किं ततः किम् ॥8॥
+
+गुरोरष्टकं यः पठेत्पुण्यदेही
+यतिर्भूपतिर्ब्रह्मचारी च गेही ।
+लभेत् वांछितार्थ पदं ब्रह्मसंज्ञं
+गुरोरुक्तवाक्ये मनो यस्य लग्नम् ॥9॥</div>
+      <div class="sloka-translit">śarīraṁ surūpaṁ tathā vā kalatraṁ
+yaśaścāru citraṁ dhanaṁ merutulyam ।
+manaścenna lagnaṁ guroraṅghripadme
+tataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ॥1॥
+
+kalatraṁ dhanaṁ putra-pautrādi sarvaṁ
+gṛhaṁ bāndhavāḥ sarvam etaddhi jātam ।
+manaścenna lagnaṁ guroraṅghripadme
+tataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ॥2॥
+
+ṣaḍaṅgādi vedo mukhe śāstra-vidyā
+kavitvādi gadyaṁ supadyaṁ karoti ।
+manaścenna lagnaṁ guroraṅghripadme
+tataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ॥3॥
+
+videśeṣu mānyaḥ svadeśeṣu dhanyaḥ
+sadācāra-vṛtteṣu matto na cānyaḥ ।
+manaścenna lagnaṁ guroraṅghripadme
+tataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ॥4॥
+
+kṣamā-maṇḍale bhūpa-bhūpāla-vṛndaiḥ
+sadā sevitaṁ yasya pādāravindam ।
+manaścenna lagnaṁ guroraṅghripadme
+tataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ॥5॥
+
+yaśo me gataṁ dikṣu dāna-pratāpāt
+jagad-vastu sarvaṁ kare sat-prasādāt ।
+manaścenna lagnaṁ guroraṅghripadme
+tataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ॥6॥
+
+na bhoge na yoge na vā vājirājau
+na kāntā-sukhe naiva vitteṣu cittam ।
+manaścenna lagnaṁ guroraṅghripadme
+tataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ॥7॥
+
+araṇye na vā svasya gehe na kārye
+na dehe mano vartate me tvanarghye ।
+manaścenna lagnaṁ guroraṅghripadme
+tataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ॥8॥
+
+guror aṣṭakaṁ yaḥ paṭhet puṇya-dehī
+yatir bhūpatir brahmacārī ca gehī ।
+labhet vāñchitārtha padaṁ brahma-saṁjñaṁ
+guror ukta-vākye mano yasya lagnam ॥9॥</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Guru Paduka Stotram <span class="badge">Guru sloka</span></div>
+      <div class="sloka-text sanskrit">अनन्तसंसार समुद्रतार नौकायिताभ्यां गुरुभक्तिदाभ्याम् ।
+वैराग्यसाम्राज्यदपूजनाभ्यां नमो नमः श्रीगुरुपादुकाभ्याम् ॥ 1 ॥
+
+कवित्ववाराशिनिशाकराभ्यां दौर्भाग्यदावां बुदमालिकाभ्याम् ।
+दूरिकृतानम्र विपत्ततिभ्यां नमो नमः श्रीगुरुपादुकाभ्याम् ॥ 2 ॥
+
+नता ययोः श्रीपतितां समीयुः कदाचिदप्याशु दरिद्रवर्याः ।
+मूकाश्र्च वाचस्पतितां हि ताभ्यां नमो नमः श्रीगुरुपादुकाभ्याम् ॥ 3 ॥
+
+नालीकनीकाश पदाहृताभ्यां नानाविमोहादि निवारिकाभ्याम् ।
+नमज्जनाभीष्टततिप्रदाभ्यां नमो नमः श्रीगुरुपादुकाभ्याम् ॥ 4 ॥
+
+नृपालि मौलिव्रजरत्नकान्ति सरिद्विराजत् झषकन्यकाभ्याम् ।
+नृपत्वदाभ्यां नतलोकपङ्कते: नमो नमः श्रीगुरुपादुकाभ्याम् ॥ 5 ॥
+
+पापान्धकारार्क परम्पराभ्यां तापत्रयाहीन्द्र खगेश्र्वराभ्याम् ।
+जाड्याब्धि संशोषण वाडवाभ्यां नमो नमः श्रीगुरुपादुकाभ्याम् ॥ 6 ॥
+
+शमादिषट्क प्रदवैभवाभ्यां समाधिदान व्रतदीक्षिताभ्याम् ।
+रमाधवान्ध्रिस्थिरभक्तिदाभ्यां नमो नमः श्रीगुरुपादुकाभ्याम् ॥ 7 ॥
+
+स्वार्चापराणां अखिलेष्टदाभ्यां स्वाहासहायाक्षधुरन्धराभ्याम् ।
+स्वान्ताच्छभावप्रदपूजनाभ्यां नमो नमः श्रीगुरुपादुकाभ्याम् ॥ 8 ॥
+
+कामादिसर्प व्रजगारुडाभ्यां विवेकवैराग्य निधिप्रदाभ्याम् ।
+बोधप्रदाभ्यां दृतमोक्षदाभ्यां नमो नमः श्रीगुरुपादुकाभ्याम् ॥ 9 ॥</div>
+      <div class="sloka-translit">ananta-saṁsāra samudra-tāra naukāyitābhyāṁ guru-bhaktidābhyām ।
+vairāgya-sāmrājyada-pūjanābhyāṁ namo namaḥ śrī-guru-pādukābhyām ॥1॥
+
+kavitva-vārāśi-niśākarābhyāṁ daurbhāgya-dāvāṁ buda-mālikābhyām ।
+dūrīkṛtānamra vipattatibhyāṁ namo namaḥ śrī-guru-pādukābhyām ॥2॥
+
+natā yayoḥ śrīpatitāṁ samīyuḥ kadācid apyāśu daridra-varyāḥ ।
+mūkāśca vācas-patitāṁ hi tābhyāṁ namo namaḥ śrī-guru-pādukābhyām ॥3॥
+
+nālīka-nīkāśa padāhṛtābhyāṁ nānā-vimohādi nivārikābhyām ।
+namaj-janābhīṣṭa-tati-pradābhyāṁ namo namaḥ śrī-guru-pādukābhyām ॥4॥
+
+nṛpāli mauli-vraja-ratna-kānti saridvirājat jhaṣa-kanyakābhyām ।
+nṛpatva-dābhyāṁ nata-loka-paṅkteḥ namo namaḥ śrī-guru-pādukābhyām ॥5॥
+
+pāpāndhakārārka paramparābhyāṁ tāpa-trayāhīndra khageśvarābhyām ।
+jāḍyābdhi saṁśoṣaṇa vāḍavābhyāṁ namo namaḥ śrī-guru-pādukābhyām ॥6॥
+
+śamādi-ṣaṭka pradavaibhavābhyāṁ samādhidāna vrata-dīkṣitābhyām ।
+ramādhavāṅghri-sthira-bhaktidābhyāṁ namo namaḥ śrī-guru-pādukābhyām ॥7॥
+
+svārcāparāṇāṁ akhileṣṭadābhyāṁ svāhā-sahāyākṣa-dhurandharābhyām ।
+svāntācchabhāva-pradapūjanābhyāṁ namo namaḥ śrī-guru-pādukābhyām ॥8॥
+
+kāmādi-sarpa vrajagāruḍābhyāṁ viveka-vairāgya nidhipradābhyām ।
+bodhapradābhyāṁ dṛtamokṣadābhyāṁ namo namaḥ śrī-guru-pādukābhyām ॥9॥</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Totakashtakam <span class="badge">Guru sloka</span></div>
+      <div class="sloka-text sanskrit">विदिताखिलशास्त्रसुधाजलधे
+महितोपनिषत् कथितार्थनिधे ।
+हृदये कलये विमलं चरणं
+भव शंकर देशिक मे शरणम् ॥ १॥
+
+करुणावरुणालय पालय मां
+भवसागरदुःखविदूनहृदम् ।
+रचयाखिलदर्शनतत्त्वविदं
+भव शंकर देशिक मे शरणम् ॥ २॥
+
+भवता जनता सुहिता भविता
+निजबोधविचारण चारुमते ।
+कलयेश्वरजीवविवेकविदं
+भव शंकर देशिक मे शरणम् ॥ ३॥
+
+भव एव भवानिति मे नितरां
+समजायत चेतसि कौतुकिता ।
+मम वारय मोहमहाजलधिं
+भव शंकर देशिक मे शरणम् ॥ ४॥
+
+सुकृतेऽधिकृते बहुधा भवतो
+भविता समदर्शनलालसता ।
+अतिदीनमिमं परिपालय मां
+भव शंकर देशिक मे शरणम् ॥ ५॥
+
+जगतीमवितुं कलिताकृतयो
+विचरन्ति महामहसश्छलतः ।
+अहिमांशुरिवात्र विभासि गुरो
+भव शंकर देशिक मे शरणम् ॥ ६॥
+
+गुरुपुंगव पुंगवकेतन ते
+समतामयतां नहि कोऽपि सुधीः ।
+शरणागतवत्सल तत्त्वनिधे
+भव शंकर देशिक मे शरणम् ॥ ७॥
+
+विदिता न मया विशदैककला
+न च किंचन काञ्चनमस्ति गुरो ।
+द्रुतमेव विधेहि कृपां सहजां
+भव शंकर देशिक मे शरणम् ॥ ८॥</div>
+      <div class="sloka-translit">viditākhila-śāstra-sudhā-jaladhe
+mahitopaniṣat kathitārtha-nidhe ।
+hṛdaye kalaye vimalaṁ caraṇaṁ
+bhava śaṅkara deśika me śaraṇam ॥1॥
+
+karuṇā-varuṇālaya pālaya māṁ
+bhava-sāgara-duḥkha-vidūna-hṛdam ।
+racayākhila-darśana-tattva-vidaṁ
+bhava śaṅkara deśika me śaraṇam ॥2॥
+
+bhavatā janatā suhitā bhavitā
+nija-bodha-vicāraṇa cāru-mate ।
+kalayeśvara-jīva-viveka-vidaṁ
+bhava śaṅkara deśika me śaraṇam ॥3॥
+
+bhava eva bhavān iti me nitarāṁ
+samajāyata cetasi kautukitā ।
+mama vāraya moha-mahā-jaladhiṁ
+bhava śaṅkara deśika me śaraṇam ॥4॥
+
+sukṛte'dhikṛte bahudhā bhavato
+bhavitā sama-darśana-lālasatā ।
+atidīnam imaṁ paripālaya māṁ
+bhava śaṅkara deśika me śaraṇam ॥5॥
+
+jagatīm avituṁ kalitākṛtayo
+vicaranti mahā-mahasaśchalataḥ ।
+ahimāṁśur ivātra vibhāsi guro
+bhava śaṅkara deśika me śaraṇam ॥6॥
+
+guru-puṅgava puṅgava-ketana te
+samatām ayatāṁ nahi ko'pi sudhīḥ ।
+śaraṇāgata-vatsala tattva-nidhe
+bhava śaṅkara deśika me śaraṇam ॥7॥
+
+viditā na mayā viśadaika-kalā
+na ca kiṁcana kāñcanam asti guro ।
+drutam eva vidhehi kṛpāṁ sahajāṁ
+bhava śaṅkara deśika me śaraṇam ॥8॥</div>
+    </div>
+
+    <div class="note-box">💡 At this age, encourage steady pace and clear word breaks over speed. If a parent needs to sit beside the child for any special reason, prior permission must be requested by raising the reason with the team, which will be discussed and responded to. If approved, the parent should be visible in the video.</div>
+  </div>
+
+  <!-- Group 3 -->
+  <div class="age-panel" id="g3">
+    <div class="age-panel-head">
+      <div class="age-phase" style="background:#7A1F2B"></div>
+      <div><h3>11 to 14 years</h3><span>Longer, more advanced verses — focus on clarity and intonation</span></div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Sri Chandrashekarendra Saraswati Stuti <span class="badge">Guru sloka</span></div>
+      <div class="sloka-text sanskrit">॥ श्रीचन्द्रशेखरेन्द्रसरस्वतीस्तुतिः ॥
+
+श्रुतिस्मृतिपुराणोक्तधर्ममार्गरतं गुरुम् ।
+भक्तानां हितवक्तारं नमस्ते चित्तशुद्धये ॥1॥
+
+अद्वैतानन्दभरितं साधूनामुपकारिणम् ।
+सर्वशास्त्रविदं शान्तं नमस्ते चित्तशुद्धये ॥2॥
+
+धर्मभक्तिज्ञानमार्गप्रचारे बद्धकङ्कणम् ।
+अनुग्रहप्रदातारं नमस्ते चित्तशुद्धये ॥3॥
+
+भगवत्पादपादाब्जविनिवेशितचेतसः ।
+श्रीचन्द्रशेखरगुरोः प्रसादो मयि जायताम् ॥4॥
+
+क्षेत्रतीर्थकथाभिज्ञः सच्चिदानन्दविग्रहः ।
+चन्द्रशेखरवर्यो मे सन्निधत्तां सदा हृदि ॥5॥
+
+पोषणे वेदशास्त्राणां दत्तचित्तमहर्निशम् ।
+क्षेत्रयात्रारतं वन्दे सद्गुरुं चन्द्रशेखरम् ॥6॥
+
+वेदज्ञान् वेदभाष्यज्ञान् कर्तुं यस्य समुद्यमः ।
+गुरुर्यस्य महादेवः तं वन्दे चन्द्रशेखरम् ॥7॥
+
+मणिवाचकगोदादि भक्तिवागमृतैर्भृशम् ।
+बालानां भगवद्भक्तिं वर्धयन्तं गुरुं भजे ॥8॥
+
+लघूपदेशैर्नास्तिक्यभावमर्दन कोविदम् ।
+शिवं स्मितमुखं शान्तं प्रणतोऽस्मि जगद्गुरुम् ॥9॥
+
+विनयेन प्रार्थयेऽहं विद्यां बोधय मे गुरो ।
+मार्गमन्यं न जानेऽहं भवन्तं शरणं गतः ॥10॥
+
+॥ इति श्रीविजयेन्द्रसरस्वती रचितं श्रीचन्द्रशेखरेन्द्रसरस्वतीस्तुतिः सम्पूर्णम् ॥</div>
+      <div class="sloka-translit">śruti-smṛti-purāṇokta-dharma-mārgarataṁ gurum ।
+bhaktānāṁ hita-vaktāraṁ namaste citta-śuddhaye ॥1॥
+
+advaitānanda-bharitaṁ sādhūnām upakāriṇam ।
+sarva-śāstra-vidaṁ śāntaṁ namaste citta-śuddhaye ॥2॥
+
+dharma-bhakti-jñāna-mārga-pracāre baddha-kaṅkaṇam ।
+anugraha-pradātāraṁ namaste citta-śuddhaye ॥3॥
+
+bhagavat-pāda-pādābja-viniveśita-cetasaḥ ।
+śrī-candraśekhara-guroḥ prasādo mayi jāyatām ॥4॥
+
+kṣetra-tīrtha-kathābhijñaḥ saccidānanda-vigrahaḥ ।
+candraśekhara-varyo me sannidhattāṁ sadā hṛdi ॥5॥
+
+poṣaṇe veda-śāstrāṇāṁ datta-cittam aharniśam ।
+kṣetra-yātrā-rataṁ vande sadguruṁ candraśekharam ॥6॥
+
+veda-jñān veda-bhāṣya-jñān kartuṁ yasya samudyamaḥ ।
+gurur yasya mahādevaḥ taṁ vande candraśekharam ॥7॥
+
+maṇi-vācaka-godādi bhakti-vāg-amṛtair bhṛśam ।
+bālānāṁ bhagavad-bhaktiṁ vardhayantaṁ guruṁ bhaje ॥8॥
+
+laghūpadeśair nāstikya-bhāva-mardana kovidam ।
+śivaṁ smita-mukhaṁ śāntaṁ praṇato'smi jagadgurum ॥9॥
+
+vinayena prārthaye'haṁ vidyāṁ bodhaya me guro ।
+mārgam anyaṁ na jāne'haṁ bhavantaṁ śaraṇaṁ gataḥ ॥10॥</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Jagadguru Stuti <span class="badge">Sri Shivabhinava Narasimha Bharati Stuti</span></div>
+      <div class="sloka-text sanskrit">॥ श्री जगद्गुरु स्तुतिः ॥
+(श्री शिवाभिनव नृसिंहभारती स्वामि स्तुतिः)
+
+यश्शिष्य हृत्ताप दवाग्निभयनिवारिणे महामेघः
+यश्शिष्य रोगार्ति महाहिविषविनाशने सुपर्णात्मा ।
+यश्शिष्य सन्दोह विपक्षगिरि विभेदने पविस्सोर्च्यः
+श्रीसच्चिदानन्द शिवाभिनव नृसिंहभारती स्वामी ॥1॥
+
+यं शङ्करार्यापररूप इति तपोनिधिं भजन्त्यार्याः
+यं भारतीपुन्तनुरूप इति कलानिधिं स्तुवन्त्यन्ये ।
+यं सद्गुणाढ्यं निजदैवमिति नमन्ति सम्श्रितास्सोर्च्यः
+श्रीसच्चिदानन्द शिवाभिनव नृसिंहभारती स्वामी ॥2॥
+
+येनाश्रितं सज्जनतुष्टिकरमभीप्सितं चतुर्भद्रं
+येनादृतं शिष्यसुधीसुजन शिवङ्करं किरीटाद्यम् ।
+येनोद्धृता सम्यमिलोकनुत महानुभाव ता सोर्च्यः
+श्रीसच्चिदानन्द शिवाभिनव नृसिंहभारती स्वामी ॥3॥
+
+यस्मै नृपाद्याबिरुदं ददति विभूषणादिकं भक्त्या
+यस्मै प्रयच्छन्ति मुदाभजक जनानृपोपचारादीन् ।
+यस्मै प्रदत्ता गुरुणा स्वकृत तपोविभूतयस्सोर्च्यः
+श्रीसच्चिदानन्द शिवाभिनव नृसिंहभारती स्वामी ॥4॥
+
+यस्मादभीष्टार्थचयाप्तिरिह भवत्यमोघमार्तानां
+यस्मात्कटाक्षास्सदयाः कुशलकरास्सरन्ति भक्तेषु ।
+यस्मात्सदानन्दद सूक्त्यमृत धुनी प्रजायते सोर्च्यः
+श्रीसच्चिदानन्द शिवाभिनव नृसिंहभारती स्वामी ॥5॥
+
+यस्याङ्गके भाति महत्त्वगुणविबोधकं महातेजः
+यस्योक्तिपूरे ऋतपूतहित सदम्बुभक्तपानीयम् ।
+यस्यान्तरङ्गेहि शिवोहमिति विभावनैकता सोर्च्यः
+श्रीसच्चिदानन्द शिवाभिनव नृसिंहभारती स्वामी ॥6॥
+
+यस्मिन् स्थिता शृङ्गगिरीड्ययति परम्परात्तदिव्यश्रीः
+यस्मिन् चकास्त्युद्धृतवादि जयकरी यशःकरी विद्या ।
+यस्मिन् सुविज्ञानविरक्ति शमदमादिसम्पदस्सोर्च्यः
+श्रीसच्चिदानन्द शिवाभिनव नृसिंहभारती स्वामी ॥7॥
+
+योर्च्यो भजेयं शरणं भवुकयुतोस्मि येन यस्मैगीः
+दत्ता च यस्मात्सुखमीप्सितमुचितं हि यस्य दासोऽहम् ।
+यस्मिन् मनस्सन्ततभक्तियुतमभूत्स एव पाहि त्वं
+श्रीसच्चिदानन्द शिवाभिनव नृसिंहभारती स्वामी ॥8॥
+
+इति श्री जगद्गुरु स्तुतिः ।</div>
+      <div class="sloka-translit">yaśśiṣya hṛttāpa davāgnibhayanivāriṇe mahāmeghaḥ
+yaśśiṣya rogārti mahāhiviṣavināśane suparṇātmā ।
+yaśśiṣya sandoha vipakṣagiri vibhedane pavissorcyaḥ
+śrī-saccidānanda śivābhinava nṛsiṁhabhāratī svāmī ॥1॥
+
+yaṁ śaṅkarāryāpararūpa iti taponidhiṁ bhajantyāryāḥ
+yaṁ bhāratīpuntanurūpa iti kalānidhiṁ stuvantyanye ।
+yaṁ sadguṇāḍhyaṁ nijadaivam iti namanti saṁśritāssorcyaḥ
+śrī-saccidānanda śivābhinava nṛsiṁhabhāratī svāmī ॥2॥
+
+yenāśritaṁ sajjana-tuṣṭikaram abhīpsitaṁ caturbhadraṁ
+yenādṛtaṁ śiṣya-sudhī-sujana śivaṅkaraṁ kirīṭādyam ।
+yenoddhṛtā samyami-lokanuta mahānubhāva tā sorcyaḥ
+śrī-saccidānanda śivābhinava nṛsiṁhabhāratī svāmī ॥3॥
+
+yasmai nṛpādyābirudaṁ dadati vibhūṣaṇādikaṁ bhaktyā
+yasmai prayacchanti mudā bhajaka janān ṛpopacārādīn ।
+yasmai pradattā guruṇā svakṛta tapo-vibhūtayassorcyaḥ
+śrī-saccidānanda śivābhinava nṛsiṁhabhāratī svāmī ॥4॥
+
+yasmād abhīṣṭārtha-cayāptir iha bhavaty amogham ārtānāṁ
+yasmāt kaṭākṣāssadayāḥ kuśalakarāssaranti bhakteṣu ।
+yasmāt sadānandada sūktyamṛta dhunī prajāyate sorcyaḥ
+śrī-saccidānanda śivābhinava nṛsiṁhabhāratī svāmī ॥5॥
+
+yasyāṅgake bhāti mahattva-guṇa-vibodhakaṁ mahātejaḥ
+yasyokti-pūre ṛtapūta-hita sadambu-bhakta-pānīyam ।
+yasyāntaraṅge hi śivo'ham iti vibhāvanaikatā sorcyaḥ
+śrī-saccidānanda śivābhinava nṛsiṁhabhāratī svāmī ॥6॥
+
+yasmin sthitā śṛṅgagirīḍya yati paramparāttad-divyaśrīḥ
+yasmin cakāsty uddhṛtavādi jayakarī yaśaḥkarī vidyā ।
+yasmin suvijñāna-virakti śama-damādi-sampadassorcyaḥ
+śrī-saccidānanda śivābhinava nṛsiṁhabhāratī svāmī ॥7॥
+
+yorcyo bhajeyaṁ śaraṇaṁ bhavuka-yuto'smi yena yasmai gīḥ
+dattā ca yasmāt sukham īpsitam ucitaṁ hi yasya dāso'ham ।
+yasmin manas santata-bhakti-yutam abhūt sa eva pāhi tvaṁ
+śrī-saccidānanda śivābhinava nṛsiṁhabhāratī svāmī ॥8॥</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Sri Raghavendra Ashtakam <span class="badge">Guru sloka</span></div>
+      <div class="sloka-text sanskrit">श्री राघवेन्द्र अष्टकम्
+
+जय तुङ्गातटवसते वर मन्त्रालयमूर्ते ।
+कुरु करुणां मयि भीते परिमलततकीर्ते ॥
+
+तव पादार्चनसक्ते तव नामामृतमत्ते ।
+दिशदिव्यां दृशमूर्ते तव सन्तत भक्ते ॥
+
+कृतगीतासुविवृत्ते कविजनसंस्तुतवृत्ते ।
+कुरु वसतिं मम चित्ते परिवृत भक्तार्ते ॥
+
+योगीन्द्रार्चितपादे योगिजनार्पितमोदे ।
+तिम्मण्णान्वयचन्द्रे रमतां मम हृदयम् ॥
+
+तप्तसुकाञ्चनसदृशे दण्डकमण्डलहस्ते ।
+जपमालावरभूषे रमतां मम हृदयम् ॥
+
+श्रीरामार्पितचित्ते काषायाम्बरयुक्ते ।
+श्रीतुलसीमणिमाले रमतां मम हृदयम् ॥
+
+मध्वमुनीडिततत्त्वं व्याख्यान्तं परिवारे ।
+ईडेऽहं सततं मे सङ्कटपरिहारम् ॥
+
+वैणिकवंशोत्तंसं वरविद्वन्मणिमान्यम् ।
+वरदाने कल्पतरुं वन्दे गुरुराजम् ॥
+
+सुशमीन्द्रार्यकुमारैर्विद्येन्द्रैर्गुरुभक्त्या ।
+रचिता श्रीगुरुगाथा सज्जनमोदकरी ॥
+
+इति श्री सुविद्येन्द्रतीर्थ विरचित श्री राघवेन्द्र अष्टकम् ॥</div>
+      <div class="sloka-translit">jaya tuṅgātaṭavasate vara mantrālayamūrte ।
+kuru karuṇāṁ mayi bhīte parimalatatakīrte ॥
+
+tava pādārcanasakte tava nāmāmṛtamatte ।
+diśadivyāṁ dṛśamūrte tava santata bhakte ॥
+
+kṛtagītāsuvivṛtte kavijanasaṁstutavṛtte ।
+kuru vasatiṁ mama citte parivṛta bhaktārte ॥
+
+yogīndrārcitapāde yogijanārpitamode ।
+timmaṇṇānvayacandre ramatāṁ mama hṛdayam ॥
+
+taptasukāñcanasadṛśe daṇḍakamaṇḍalahaste ।
+japamālāvarabhūṣe ramatāṁ mama hṛdayam ॥
+
+śrīrāmārpitacitte kāṣāyāmbarayukte ।
+śrītulasīmaṇimāle ramatāṁ mama hṛdayam ॥
+
+madhvamunīḍitatattvaṁ vyākhyāntaṁ parivāre ।
+īḍe'haṁ satataṁ me saṅkaṭaparihāram ॥
+
+vaiṇikavaṁśottaṁsaṁ varavidvanmaṇimānyam ।
+varadāne kalpataruṁ vande gururājam ॥
+
+suśamīndrāryakumārair vidyendrair gurubhaktyā ।
+racitā śrīgurugāthā sajjanamodakarī ॥</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Shri Shankaracharya Ashtakam <span class="badge">Sri Shankaracharya Stuti</span></div>
+      <div class="sloka-text sanskrit">श्रीशङ्कराचार्याष्टकम्
+
+विश्वस्य यः सकलमङ्गलधारणाय
+पूर्णातटे विधृतवान् मनुजावतारम् ।
+तं पादनम्रजनतापनगेन्द्रवज्रं
+श्रीशङ्करं यतिवरं शिरसा नमामि ॥1॥
+
+यस्यास विश्वमिव नन्दकुमारवक्त्रे
+शास्त्राकरः किमपि बालविशालबुद्धौ ।
+प्रज्ञाप्रभास्तिमितपण्डितमण्डलं तं
+श्रीशङ्करं शिवगुरोस्तनयं नमामि ॥2॥
+
+सञ्चर्य येन पवनेन यथाऽर्यभूमौ
+वेदेषु दुष्टरचिताऽपहृता च धूलिः ।
+तं तार्किकादिमदमत्तगजेन्द्रसिंहं
+श्रीशङ्करं शिवकरं सततं नमामि ॥3॥
+
+भाष्यत्रयं मतिमलापहरं विरच्य
+कैवल्यमार्ग इव यो निदधौ प्रदीपान् ।
+तं सर्वशास्त्रनिगमागमहृद्गतज्ञं
+श्रीशङ्करं भयहरं सदयं नमामि ॥4॥
+
+येन स्वकीययशसा परमोज्ज्वलेन
+दिग्वारणाः समभिषिच्य कृताः सुशुभ्राः ।
+पाखण्डदुष्टमतखण्डनलब्धकीर्तिं
+श्रीशङ्करं सकललोकहितं नमामि ॥5॥
+
+अद्वैततत्त्वममलं श्रुतिसम्मतं च
+येनोपदिष्टमिह जीवशिवैक्यकारि ।
+संसारदुस्तरसमुद्रमहातरं तं
+श्रीशङ्करं विनतकल्पतरुं नमामि ॥6॥
+
+काश्मीरदेशगतपीठमनन्यभुक्तं
+श्रीशारदाख्यमधिरुह्य च योदिदेश ।
+अद्वैततत्त्वमहतीं पुनरेकदा तं
+श्रीशङ्करं निरुपमेयकृतिं नमामि ॥7॥
+
+संस्थाप्य धर्ममपहृत्य परामविद्यां
+सत्यं प्रकाश्य जनतोपकृतास्ति येन ।
+ध्येयार्थमेव कृतभूरिचमत्कृतिं तं
+श्रीशङ्करं प्रवरयोगिवरं नमामि ॥8॥
+
+पापोऽस्मि मन्दमतिरस्मि तथानधीतः
+सत्यं परं त्वमसि शङ्कर दीनबन्धुः ।
+आलोकयायि शिव वत्सलवीक्षितैर्मां
+इत्येव दासगणुशिष्यलवस्य कामः ॥9॥
+
+इति स्वामी वरदानन्दभारतीकृतं श्रीशङ्कराचार्याष्टकं सम्पूर्णम् ।</div>
+      <div class="sloka-translit">viśvasya yaḥ sakala-maṅgala-dhāraṇāya
+pūrṇātaṭe vidhṛtavān manujāvatāram ।
+taṁ pāda-namra-janatā-panagendra-vajraṁ
+śrī-śaṅkaraṁ yati-varaṁ śirasā namāmi ॥1॥
+
+yasyāsa viśvam iva nanda-kumāra-vaktre
+śāstrākaraḥ kimapi bāla-viśāla-buddhau ।
+prajñā-prabhā-stimita-paṇḍita-maṇḍalaṁ taṁ
+śrī-śaṅkaraṁ śiva-guros tanayaṁ namāmi ॥2॥
+
+sañcarya yena pavanena yathā'rya-bhūmau
+vedeṣu duṣṭa-racitā'pahṛtā ca dhūliḥ ।
+taṁ tārkikādi-mada-matta-gajendra-siṁhaṁ
+śrī-śaṅkaraṁ śiva-karaṁ satataṁ namāmi ॥3॥
+
+bhāṣya-trayaṁ mati-malāpaharaṁ viracya
+kaivalya-mārga iva yo nidadhau pradīpān ।
+taṁ sarva-śāstra-nigamāgama-hṛd-gata-jñaṁ
+śrī-śaṅkaraṁ bhaya-haraṁ sadayaṁ namāmi ॥4॥
+
+yena svakīya-yaśasā paramojjvalena
+dig-vāraṇāḥ samabhiṣicya kṛtāḥ suśubhrāḥ ।
+pākhaṇḍa-duṣṭa-mata-khaṇḍana-labdha-kīrtiṁ
+śrī-śaṅkaraṁ sakala-loka-hitaṁ namāmi ॥5॥
+
+advaita-tattvam amalaṁ śruti-sammataṁ ca
+yenopadiṣṭam iha jīva-śivaikya-kāri ।
+saṁsāra-dustara-samudra-mahā-taraṁ taṁ
+śrī-śaṅkaraṁ vinata-kalpa-taruṁ namāmi ॥6॥
+
+kāśmīra-deśa-gata-pīṭham ananya-bhuktaṁ
+śrī-śāradākhyam adhiruhya ca yo'dideśa ।
+advaita-tattvam ahatīṁ punar ekadā taṁ
+śrī-śaṅkaraṁ nirupameya-kṛtiṁ namāmi ॥7॥
+
+saṁsthāpya dharmam apahṛtya parām avidyāṁ
+satyaṁ prakāśya janatopakṛtāsti yena ।
+dhyeyārtham eva kṛta-bhūri-camatkṛtiṁ taṁ
+śrī-śaṅkaraṁ pravara-yogi-varaṁ namāmi ॥8॥
+
+pāpo'smi manda-matir asmi tathānadhītaḥ
+satyaṁ paraṁ tvam asi śaṅkara dīna-bandhuḥ ।
+ālokayāyi śiva vatsala-vīkṣitair māṁ
+ity eva dāsa-gaṇu-śiṣya-lavasya kāmaḥ ॥9॥</div>
+    </div>
+
+    <div class="sloka-card">
+      <div class="sloka-title">Sri Datta Atharvashirsha <span class="badge">Datta sloka</span></div>
+      <div class="sloka-text sanskrit">॥ हरिः ॐ ॥
+
+ॐ नमो भगवते दत्तात्रेयाय अवधूताय
+दिगंबराय विधिहरिहराय आदितत्त्वाय आदिशक्तये ॥1॥
+
+त्वं चराचरात्मकः सर्वव्यापी सर्वसाक्षी
+त्वं दिक्कालातीतः त्वं द्वन्द्वातीतः ॥2॥
+
+त्वं विश्वात्मकः त्वं विश्वाधारः विश्वेशः
+विश्वनाथः त्वं विश्वनाटकसूत्रधारः
+त्वमेव केवलं कर्तासि त्वं अकर्तासि च नित्यम् ॥3॥
+
+त्वं आनन्दमयः ध्यानगम्यः त्वं आत्मानन्दः
+त्वं परमानन्दः त्वं सच्चिदानन्दः
+त्वमेव चैतन्यः चैतन्यदत्तात्रेयः
+ॐ चैतन्यदत्तात्रेयाय नमः ॥4॥
+
+त्वं भक्तवत्सलः भक्ततारकः भक्तरक्षकः
+दयाघनः भजनप्रियः त्वं पतितपावनः
+करुणाकरः भवभयहरः ॥5॥
+
+त्वं भक्तकारणसंभूतः अत्रिसुतः अनसूयात्मजः
+त्वं श्रीपादश्रीवल्लभः त्वं गाणगग्रामनिवासी
+श्रीमन्नृसिंहसरस्वती त्वं श्रीनृसिंहभानः
+अक्कलकोटनिवासी श्रीस्वामीसमर्थः
+त्वं करवीरनिवासी परमसद्गुरु श्रीकृष्णसरस्वती
+त्वं श्रीसद्गुरु माधवसरस्वती ॥6॥
+
+त्वं स्मर्तृगामी श्रीगुरूदत्तः शरणागतोऽस्मि त्वाम् ।
+दीने आर्ते मयि दयां कुरु
+तव एकमात्रदृष्टिक्षेपः दुरितक्षयकारकः ।
+हे भगवन्, वरददत्तात्रेय,
+मामुद्धर, मामुद्धर, मामुद्धर इति प्रार्थयामि ।
+ॐ द्रां दत्तात्रेयाय नमः ॥7॥
+
+॥ ॐ दिगंबराय विद्महे अवधूताय धीमहि तन्नो दत्तः प्रचोदयात् ॥</div>
+      <div class="sloka-translit">oṁ namo bhagavate dattātreyāya avadhūtāya
+digambarāya vidhi-harihar āya āditattvāya ādiśaktaye ॥1॥
+
+tvaṁ carācarātmakaḥ sarva-vyāpī sarva-sākṣī
+tvaṁ dik-kālātītaḥ tvaṁ dvandvātītaḥ ॥2॥
+
+tvaṁ viśvātmakaḥ tvaṁ viśvādhāraḥ viśveśaḥ
+viśvanāthaḥ tvaṁ viśva-nāṭaka-sūtradhāraḥ
+tvam eva kevalaṁ kartāsi tvaṁ akartāsi ca nityam ॥3॥
+
+tvaṁ ānandamayaḥ dhyāna-gamyaḥ tvaṁ ātmānandaḥ
+tvaṁ paramānandaḥ tvaṁ saccidānandaḥ
+tvam eva caitanyaḥ caitanya-dattātreyaḥ
+oṁ caitanya-dattātreyāya namaḥ ॥4॥
+
+tvaṁ bhakta-vatsalaḥ bhakta-tārakaḥ bhakta-rakṣakaḥ
+dayāghanaḥ bhajana-priyaḥ tvaṁ patita-pāvanaḥ
+karuṇākaraḥ bhava-bhaya-haraḥ ॥5॥
+
+tvaṁ bhakta-kāraṇa-sambhūtaḥ atri-sutaḥ anasūyātmajaḥ
+tvaṁ śrīpāda-śrīvallabhaḥ tvaṁ gāṇaga-grāma-nivāsī
+śrīman-nṛsiṁha-sarasvatī tvaṁ śrī-nṛsiṁha-bhānaḥ
+akkalakoṭa-nivāsī śrī-svāmī-samarthaḥ
+tvaṁ karavīra-nivāsī parama-sadguru śrī-kṛṣṇa-sarasvatī
+tvaṁ śrī-sadguru mādhava-sarasvatī ॥6॥
+
+tvaṁ smartṛ-gāmī śrī-gurū-dattaḥ śaraṇāgato'smi tvām ।
+dīne ārte mayi dayāṁ kuru
+tava eka-mātra-dṛṣṭi-kṣepaḥ durita-kṣaya-kārakaḥ ।
+he bhagavan, varada-dattātreya,
+māmuddhara, māmuddhara, māmuddhara iti prārthayāmi ।
+oṁ drāṁ dattātreyāya namaḥ ॥7॥
+
+oṁ digambarāya vidmahe avadhūtāya dhīmahi tanno dattaḥ pracodayāt ॥</div>
+    </div>
+
+    <div class="note-box">💡 Older children are encouraged to also understand and share the meaning of their chosen verse briefly, if comfortable.</div>
+  </div>
+</section>
+
+<!-- EVALUATION -->
+<section id="evaluation">
+  <div class="section-head">
+    <div class="section-kicker">How recitations are judged</div>
+    <h2>Evaluation parameters</h2>
+    <p>Judges will assess each child warmly and constructively, using the following parameters as a guide.</p>
+  </div>
+  <div class="eval-grid">
+    <div class="eval-card">
+      <div class="eval-top"><h4>Pronunciation</h4><span class="eval-weight">Key</span></div>
+      <p>Clarity and accuracy of Sanskrit pronunciation, including correct svaras/accents where applicable.</p>
+    </div>
+    <div class="eval-card">
+      <div class="eval-top"><h4>Fluency &amp; memory</h4><span class="eval-weight">Key</span></div>
+      <p>Reciting smoothly from memory, without long pauses or prompting.</p>
+    </div>
+    <div class="eval-card">
+      <div class="eval-top"><h4>Rhythm &amp; intonation</h4><span class="eval-weight">Important</span></div>
+      <p>Maintaining the natural rhythm (chandas) and tone of the sloka throughout.</p>
+    </div>
+    <div class="eval-card">
+      <div class="eval-top"><h4>Clarity of voice</h4><span class="eval-weight">Important</span></div>
+      <p>Audible, clear delivery — neither rushed nor too soft to follow.</p>
+    </div>
+    <div class="eval-card">
+      <div class="eval-top"><h4>Confidence &amp; presentation</h4><span class="eval-weight">Considered</span></div>
+      <p>Composure and sincerity while reciting in front of the audience or in the recording.</p>
+    </div>
+    <div class="eval-card">
+      <div class="eval-top"><h4>Age-appropriate effort</h4><span class="eval-weight">Considered</span></div>
+      <p>Judged relative to the child's own age group, recognising effort and improvement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE AUDIO -->
+<section id="practice-audio">
+  <div class="section-head">
+    <div class="section-kicker">For practice at home</div>
+    <h2>Practice audio for all slokas</h2>
+    <p>To help every child practise correct pronunciation and rhythm, Bhakthi Sudha Mandali will post audio recordings of all the slokas listed above — for every age group.</p>
+  </div>
+  <div class="audio-steps">
+    <div class="audio-step">
+      <span class="ico">🎧</span>
+      <p><strong>Listen and repeat.</strong> Audio recordings of each sloka (across all three age groups) will be posted in the Mandali's WhatsApp group to guide children in learning correct pronunciation and rhythm.</p>
+    </div>
+    <div class="audio-step">
+      <span class="ico">🔁</span>
+      <p><strong>Practise at your own pace.</strong> Children can listen as many times as needed in the days leading up to the competition, alongside parents or on their own.</p>
+    </div>
+    <div class="audio-step">
+      <span class="ico">📌</span>
+      <p><strong>Will be posted in WhatsApp.</strong> These guide recordings will be shared on the Mandali's WhatsApp group ahead of July 1st — please check back.</p>
+    </div>
+  </div>
+  <div class="audio-warn">🎙️ These recordings are for practice and guidance only — they are not part of registration or submission.</div>
+</section>
+
+
+<!-- PRIZES -->
+<section id="prizes">
+  <div class="section-head">
+    <div class="section-kicker">Recognition</div>
+    <h2>Prizes &amp; certificates</h2>
+    <p>Every child who participates is celebrated — because showing up with devotion is itself an achievement.</p>
+  </div>
+  <div class="prize-grid">
+    <div class="prize-card">
+      <div class="prize-icon">🎓</div>
+      <h4>For every participant</h4>
+      <p>All children who take part in the competition will receive a <strong>certificate of participation</strong> along with a <strong>small gift</strong>, regardless of the outcome.</p>
+    </div>
+    <div class="prize-card special">
+      <div class="prize-icon">🏆</div>
+      <h4>Special prize</h4>
+      <p>Children who recite <strong>exceptionally well</strong> in each age group will be awarded a <strong>special prize</strong>, as decided by the judges based on the evaluation parameters.</p>
+    </div>
+  </div>
+</section>
+
+<div class="div-wrap">
+  <div class="form-card">
+    <div class="prize-icon">🙏</div>
+    <h3 class="sanskrit">गुरुभ्यो नमः</h3>
+    <p>Looking forward to a huge turnout, with everyone's efforts coming together to celebrate our revered Gurus.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="org sanskrit">भक्ति सुधा मण्डली</div>
+  <div class="contact">Queries? Contact <strong>Mrs. Sudha Ramanathan</strong> · 94400 74983</div>
+  <div class="tagline">Sloka Spardha · Guru Purnima 2026 · Bhakthi Sudha Mandali</div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
+  });
+
+  document.querySelectorAll('.age-tab').forEach(function(tab){
+    function activateTab(){
+      document.querySelectorAll('.age-tab').forEach(function(t){ t.classList.remove('active'); });
+      document.querySelectorAll('.age-panel').forEach(function(p){ p.classList.remove('active'); });
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    }
+    var firedByTouch = false;
+    tab.addEventListener('touchend', function(e){
+      firedByTouch = true;
+      e.preventDefault();
+      activateTab();
+    }, { passive: false });
+    tab.addEventListener('click', function(e){
+      e.preventDefault();
+      if (firedByTouch) { firedByTouch = false; return; }
+      activateTab();
+    });
+  });
+</script>
+
+</body>
+</html>
