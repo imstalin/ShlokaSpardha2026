@@ -30,10 +30,10 @@ export const EVENT = {
 export const OWNER = {
   name: "Mrs. Sudha Ramanathan",
   role: "Teacher at an international school",
-  bio: "Sudha Ramanathan is a teacher at an international school, 
+  bio: `Mrs. Sudha Ramanathan is a teacher at an international school, 
   proficient in Hindi and Sanskrit. 
   Her aim is to nurture our values and tradition through spiritual learning 
-  for people of all age groups. Let's join and spread the divine vibe.",
+  for people of all age groups. Let's join and spread the divine vibe.`, 
 } as const;
 
 export const REGISTRATION_DETAILS = `Sloka Spardha 2026 — Bhakthi Sudha Mandali
