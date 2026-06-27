@@ -30,5 +30,6 @@ Guru Purnima Sloka Competition for children aged 3–14
 📅 July 25, 2026 | 🕠 5:15–7:00 PM IST
 ⏳ Register by July 10, 2026
 
-View slokas & details on the event website.`;
+View slokas & details on the event website.
+https://bhakthisudhamandali.com/`;
 }

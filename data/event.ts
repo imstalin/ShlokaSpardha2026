@@ -22,9 +22,9 @@ export const EVENT = {
   // TODO: Replace with the actual Google Form URL when available
   googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfdX81JW_ND-_a63FNuC0y0FlsRKl-BBhzQM3Keajp5dZShSg/viewform",
   // TODO: Replace with the Mandali WhatsApp group invite link
-  whatsappGroupUrl: "#",
+  whatsappGroupUrl: "https://bhakthisudhamandali.com/",
   // TODO: Replace with your deployed site URL for social sharing
-  siteUrl: "https://sloka-spardha-2026.vercel.app",
+  siteUrl: "https://bhakthisudhamandali.com/",
 } as const;
 
 export const OWNER = {

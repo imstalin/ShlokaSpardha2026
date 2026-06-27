@@ -19,7 +19,7 @@ export default function LyricsDisplay({ compact, onClose }: LyricsDisplayProps) 
     <div className={compact ? "border-t border-white/10" : "flex flex-col"}>
       {!compact && (
         <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
-          <h3 className="text-sm font-semibold text-white">Lyrics</h3>
+          <h3 className="text-sm font-semibold text-white">Slokas</h3>
           {onClose && (
             <button
               type="button"

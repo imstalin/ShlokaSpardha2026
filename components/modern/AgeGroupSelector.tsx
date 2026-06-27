@@ -82,7 +82,7 @@ export default function AgeGroupSelector({
 
                   <div className="mt-4 flex items-center justify-between text-sm">
                     <span className="font-medium text-ink-soft">
-                      {total} slokas · {group.reciteCount.split(" ")[0]} recite
+                      {total} slokas · {group.reciteCount.split(" ")[0]} 
                     </span>
                     <ChevronRight
                       className={`h-4 w-4 text-maroon transition ${selected ? "rotate-90" : ""}`}
