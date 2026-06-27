@@ -11,18 +11,21 @@ import {
   buildWhatsAppShareUrl,
   copyToClipboard,
 } from "@/lib/share";
+import { trackEvent } from "@/lib/analytics";
 
 export default function RegistrationCard() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
     if (await copyToClipboard(REGISTRATION_DETAILS)) {
+      trackEvent("copy_registration_details", { site_version: "modern" });
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
   };
 
   const handleWhatsApp = () => {
+    trackEvent("whatsapp_share", { content_type: "registration", site_version: "modern" });
     window.open(buildWhatsAppShareUrl(buildRegistrationShareText()), "_blank", "noopener,noreferrer");
   };
 
@@ -52,6 +55,12 @@ export default function RegistrationCard() {
             href={EVENT.googleFormUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              trackEvent("registration_form_click", {
+                link_url: EVENT.googleFormUrl,
+                site_version: "modern",
+              })
+            }
             className="flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-maroon to-maroon-dark py-3.5 text-sm font-bold text-cream shadow-lg transition hover:shadow-xl active:scale-[0.98]"
           >
             Open Google Form
@@ -66,7 +75,13 @@ export default function RegistrationCard() {
             <ActionButton onClick={handleCopy} icon={Copy} label={copied ? "Copied!" : "Copy details"} />
             <ActionButton onClick={handleWhatsApp} icon={MessageCircle} label="WhatsApp share" />
             <ActionButton
-              onClick={downloadEventICS}
+              onClick={() => {
+                trackEvent("add_to_calendar", {
+                  event_name: "Sloka Spardha 2026",
+                  site_version: "modern",
+                });
+                downloadEventICS();
+              }}
               icon={CalendarPlus}
               label="Add to calendar"
             />

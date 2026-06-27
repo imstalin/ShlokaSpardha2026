@@ -6,6 +6,7 @@ import { EVENT } from "@/data/event";
 import CountdownTimer from "@/components/modern/CountdownTimer";
 import { GradientOrb } from "@/components/modern/ui";
 import { useReducedMotion } from "@/lib/motion";
+import { trackEvent } from "@/lib/analytics";
 
 const PARTICLES = Array.from({ length: 12 }, (_, i) => ({
   id: i,
@@ -129,7 +130,10 @@ export default function HeroModern({
         >
           <button
             type="button"
-            onClick={onRegister}
+            onClick={() => {
+              trackEvent("cta_click", { cta: "register", site_version: "modern" });
+              onRegister();
+            }}
             className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-maroon to-maroon-dark px-6 py-3.5 text-sm font-bold text-cream shadow-lg shadow-maroon/25 transition hover:shadow-xl active:scale-[0.98]"
           >
             Register
@@ -137,7 +141,10 @@ export default function HeroModern({
           </button>
           <button
             type="button"
-            onClick={onExploreSlokas}
+            onClick={() => {
+              trackEvent("cta_click", { cta: "explore_slokas", site_version: "modern" });
+              onExploreSlokas();
+            }}
             className="inline-flex items-center gap-2 rounded-full border border-maroon/30 bg-white/50 px-6 py-3.5 text-sm font-bold text-maroon backdrop-blur-md transition hover:bg-white/70 active:scale-[0.98]"
           >
             <BookOpen className="h-4 w-4" />
@@ -145,7 +152,10 @@ export default function HeroModern({
           </button>
           <button
             type="button"
-            onClick={onPracticeTracker}
+            onClick={() => {
+              trackEvent("cta_click", { cta: "practice_tracker", site_version: "modern" });
+              onPracticeTracker();
+            }}
             className="inline-flex items-center gap-2 rounded-full border border-tulsi/30 bg-tulsi/10 px-6 py-3.5 text-sm font-bold text-tulsi transition hover:bg-tulsi/15 active:scale-[0.98]"
           >
             Practice Tracker

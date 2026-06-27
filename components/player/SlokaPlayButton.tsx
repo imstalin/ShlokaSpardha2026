@@ -4,6 +4,7 @@ import { Pause, Play } from "lucide-react";
 import { useAudioPlayerOptional } from "@/context/AudioPlayerContext";
 import { getTracksForGroup, getTrackById } from "@/lib/audio-player/tracks";
 import type { Sloka } from "@/data/slokas";
+import { trackEvent } from "@/lib/analytics";
 
 interface SlokaPlayButtonProps {
   sloka: Sloka;
@@ -41,9 +42,21 @@ export default function SlokaPlayButton({
   const handlePlay = () => {
     if (!track) return;
     if (isCurrent) {
+      if (!isPlaying) {
+        trackEvent("audio_play", {
+          sloka_id: sloka.id,
+          age_group: groupId,
+          site_version: variant,
+        });
+      }
       player.togglePlay();
       return;
     }
+    trackEvent("audio_play", {
+      sloka_id: sloka.id,
+      age_group: groupId,
+      site_version: variant,
+    });
     const queue = groupId ? getTracksForGroup(groupId) : undefined;
     player.playTrack(track, queue);
   };

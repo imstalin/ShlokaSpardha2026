@@ -9,6 +9,7 @@ import {
   buildWhatsAppShareUrl,
   copyToClipboard,
 } from "@/lib/share";
+import { trackEvent } from "@/lib/analytics";
 
 export default function Register() {
   const countdown = useCountdown(EVENT.registrationDeadlineISO);
@@ -17,12 +18,14 @@ export default function Register() {
   const handleCopy = async () => {
     const ok = await copyToClipboard(REGISTRATION_DETAILS);
     if (ok) {
+      trackEvent("copy_registration_details", { site_version: "classic" });
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
   };
 
   const handleWhatsApp = () => {
+    trackEvent("whatsapp_share", { content_type: "registration", site_version: "classic" });
     const url = buildWhatsAppShareUrl(buildRegistrationShareText());
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -75,6 +78,12 @@ export default function Register() {
           href={EVENT.googleFormUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() =>
+            trackEvent("registration_form_click", {
+              link_url: EVENT.googleFormUrl,
+              site_version: "classic",
+            })
+          }
           className="mb-6 inline-flex items-center gap-2 rounded-full bg-maroon px-6 py-3.5 text-sm font-bold text-cream shadow-[0_6px_18px_rgba(122,31,43,0.25)] transition hover:bg-maroon-dark active:scale-[0.97]"
         >
           Open Google Form ↗

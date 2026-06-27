@@ -14,14 +14,16 @@ import {
 } from "@/lib/practice";
 import SlokaPlayButton from "@/components/player/SlokaPlayButton";
 import { useReducedMotion } from "@/lib/motion";
+import { trackEvent } from "@/lib/analytics";
 
 interface SlokaLearningCardProps {
   sloka: Sloka;
   index: number;
+  groupId: string;
   onUpdate?: () => void;
 }
 
-export default function SlokaLearningCard({ sloka, index, onUpdate }: SlokaLearningCardProps) {
+export default function SlokaLearningCard({ sloka, index, groupId, onUpdate }: SlokaLearningCardProps) {
   const reduced = useReducedMotion();
   const [expanded, setExpanded] = useState(index === 0);
   const [showTranslit, setShowTranslit] = useState(false);
@@ -37,19 +39,34 @@ export default function SlokaLearningCard({ sloka, index, onUpdate }: SlokaLearn
   const handleCopy = async () => {
     const text = `${sloka.title}\n\n${sloka.sanskrit}\n\n${sloka.transliteration}`;
     if (await copyToClipboard(text)) {
+      trackEvent("copy_sloka", { sloka_id: sloka.id, age_group: groupId, site_version: "modern" });
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
   };
 
   const handlePractice = () => {
-    setCompleted(togglePracticeCompleted(sloka.id));
+    const next = togglePracticeCompleted(sloka.id);
+    setCompleted(next);
+    if (next) {
+      trackEvent("practice_complete", {
+        sloka_id: sloka.id,
+        age_group: groupId,
+        site_version: "modern",
+      });
+    }
     onUpdate?.();
   };
 
   const handleFavorite = () => {
-    setFavorite(toggleFavorite(sloka.id));
-    onUpdate?.();
+    const next = toggleFavorite(sloka.id);
+    setFavorite(next);
+    trackEvent("favorite_toggle", {
+      sloka_id: sloka.id,
+      age_group: groupId,
+      favorited: next,
+      site_version: "modern",
+    });
   };
 
   return (
@@ -57,7 +74,18 @@ export default function SlokaLearningCard({ sloka, index, onUpdate }: SlokaLearn
       <button
         type="button"
         className="flex w-full items-center gap-3 p-5 text-left"
-        onClick={() => setExpanded((v) => !v)}
+        onClick={() =>
+          setExpanded((v) => {
+            if (!v) {
+              trackEvent("sloka_expand", {
+                sloka_id: sloka.id,
+                age_group: groupId,
+                site_version: "modern",
+              });
+            }
+            return !v;
+          })
+        }
         aria-expanded={expanded}
         aria-controls={`sloka-body-${sloka.id}`}
       >
@@ -134,7 +162,7 @@ export default function SlokaLearningCard({ sloka, index, onUpdate }: SlokaLearn
                 {sloka.audioFile ? (
                   <SlokaPlayButton
                     sloka={sloka}
-                    groupId={sloka.id.split("-")[0]}
+                    groupId={groupId}
                     variant="modern"
                   />
                 ) : (

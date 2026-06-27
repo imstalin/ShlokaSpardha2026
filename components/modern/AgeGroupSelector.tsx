@@ -5,6 +5,7 @@ import { ChevronRight } from "lucide-react";
 import { ageGroups } from "@/lib/slokas";
 import { GlassCard, ModernSection, SectionHeader } from "@/components/modern/ui";
 import { useReducedMotion } from "@/lib/motion";
+import { trackEvent } from "@/lib/analytics";
 
 const DIFFICULTY: Record<string, string> = {
   g1: "Beginner",
@@ -49,7 +50,15 @@ export default function AgeGroupSelector({
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
               whileTap={reduced ? undefined : { scale: 0.98 }}
-              onClick={() => onSelect(group.id)}
+              onClick={() => {
+                if (group.id !== selectedId) {
+                  trackEvent("age_group_select", {
+                    age_group: group.id,
+                    site_version: "modern",
+                  });
+                }
+                onSelect(group.id);
+              }}
               aria-pressed={selected}
               aria-label={`${group.title}, ${total} slokas, ${pct}% practiced`}
               className="text-left"

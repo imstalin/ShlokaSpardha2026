@@ -22,7 +22,9 @@ const tiroSanskrit = Tiro_Devanagari_Sanskrit({
   display: "swap",
 });
 
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { EVENT } from "@/data/event";
+import { GA_MEASUREMENT_ID } from "@/lib/ga-config";
 import AudioPlayerRoot from "@/components/player/AudioPlayerRoot";
 
 export const metadata: Metadata = {
@@ -70,6 +72,7 @@ export default function RootLayout({
     >
       <body className="font-sans antialiased">
         <AudioPlayerRoot>{children}</AudioPlayerRoot>
+        {GA_MEASUREMENT_ID && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
       </body>
     </html>
   );

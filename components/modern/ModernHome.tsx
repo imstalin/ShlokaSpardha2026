@@ -67,7 +67,13 @@ export default function ModernHome() {
           />
           <div className="space-y-3">
             {selectedGroup.slokas.map((sloka, i) => (
-              <SlokaLearningCard key={sloka.id} sloka={sloka} index={i} onUpdate={refresh} />
+              <SlokaLearningCard
+                key={sloka.id}
+                sloka={sloka}
+                index={i}
+                groupId={selectedGroupId}
+                onUpdate={refresh}
+              />
             ))}
           </div>
           {selectedGroup.note && (
